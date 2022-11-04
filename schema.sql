@@ -23,3 +23,5 @@ CREATE TABLE animals (
     neutered BOOLEAN,
     weight_kg decimal(4, 2)
 );
+-- ======================week 1 day 2==========================
+ALTER TABLE animals ADD species varchar(100);
