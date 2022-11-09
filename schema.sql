@@ -82,3 +82,5 @@ CREATE TABLE visits (
 	  REFERENCES vets(id)
 	  ON DELETE CASCADE
 );
+-- ======================week 2 day 1==========================
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
