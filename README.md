@@ -18,6 +18,13 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Twitter: [@ZakariyaKhamisi](https://twitter.com/ZakariyaKhamisi)
 - LinkedIn: [ZackOps](https://www.linkedin.com/in/zackops/)
 
+👤 **Alier Philip Maguet**
+
+- GitHub: [@AlierPM](https://github.com/AlierPM)
+- Twitter: [@AlierPM](https://twitter.com/AlierPM)
+- LinkedIn: [@AlierPM](https://www.linkedin.com/in/alierphilipmaguet/)
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
