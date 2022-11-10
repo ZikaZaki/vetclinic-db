@@ -1,6 +1,8 @@
 # Vet Clinic Database
 > This project is about using PostgresSQL to create a database for vet clinic studio project.
 
+## Schema Diagram ([Drawsql](https://drawsql.app/))
+<img src="./assets/schema_diagram.png" alt="schema diagram" width="600"/>
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
