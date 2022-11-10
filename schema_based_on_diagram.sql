@@ -7,16 +7,23 @@ LIMIT
   = -1 IS_TEMPLATE = False;
 
 -- CREATE TABLE patients;
-  CREATE TABLE patients (
-    id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-    name varchar(200),
-    date_of_birth date
-  );
+CREATE TABLE patients (
+id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+name varchar(200),
+date_of_birth date
+);
 
-  -- CREATE TABLE medical_histories;
-  CREATE TABLE medical_histories (
-    id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-    admitted_at timestamp,
-    patient_id int REFERENCES patients(id),
-    status VARCHAR(20),
-  );
+-- CREATE TABLE medical_histories;
+CREATE TABLE medical_histories (
+id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+admitted_at timestamp,
+patient_id int REFERENCES patients(id),
+status VARCHAR(20),
+);
+
+-- CREATE TABLE treatments;
+CREATE TABLE treatments (
+id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+type VARCHAR(50),
+name VARCHAR(200)
+);
