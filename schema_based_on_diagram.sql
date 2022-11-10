@@ -27,3 +27,10 @@ id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
 type VARCHAR(50),
 name VARCHAR(200)
 );
+
+-- CREATE TABLE history_treatments;
+CREATE TABLE history_treatments (
+medical_history_id int REFERENCES medical_histories(id),
+treatment_id int REFERENCES treatments(id),
+PRIMARY KEY (medical_history_id, treatment_id)
+);
