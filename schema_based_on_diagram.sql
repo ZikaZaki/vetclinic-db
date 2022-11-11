@@ -47,3 +47,25 @@ LIMIT
     invoice_id int REFERENCES invoices(id),
     treatment_id int REFERENCES treatments(id)
   );
+-- PATIENTS TABLE INDEXES
+CREATE INDEX idx_patients_name ON patients(name);
+
+-- MEDICAL_HISTORIES TABLE INDEXES
+CREATE INDEX idx_medical_histories_patient_id ON medical_histories(patient_id);
+CREATE INDEX idx_medical_histories_status ON medical_histories(status);
+
+-- TREATMENTS TABLE INDEXES
+CREATE INDEX idx_treatments_type ON treatments(type);
+
+-- HISTORY_TREATMENTS TABLE INDEXES
+CREATE INDEX idx_history_treatments_medical_history_id ON history_treatments(medical_history_id);
+CREATE INDEX idx_history_treatments_treatment_id ON history_treatments(treatment_id);
+
+-- INVOICES TABLE INDEXES
+CREATE INDEX idx_invoices_medical_history_id ON invoices(medical_history_id);
+CREATE INDEX idx_invoices_generated_at ON invoices(generated_at);
+CREATE INDEX idx_invoices_paid_at ON invoices(paid_at);
+
+-- INVOICE_ITEMS TABLE INDEXES
+CREATE INDEX idx_invoice_items_invoice_id ON invoice_items(invoice_id);
+CREATE INDEX idx_invoice_items_treatment_id ON invoice_items(treatment_id);
