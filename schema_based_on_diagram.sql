@@ -38,3 +38,12 @@ LIMIT
     paid_at timestamp,
     medical_history_id int REFERENCES medical_histories(id)
   );
+-- CREATE TABLE invoice_items;
+  CREATE TABLE invoice_items (
+    id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    unit_price DECIMAL(10, 2),
+    quantity int,
+    total_price DECIMAL(10, 2),
+    invoice_id int REFERENCES invoices(id),
+    treatment_id int REFERENCES treatments(id)
+  );
